@@ -1,0 +1,195 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #41203D;
+}
+
+body {
+  background-color: #E5E9F1;
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.row {
+  margin-bottom: 0 !important;
+  padding-bottom: 10px;
+}
+
+.btn i {
+  font-size: 21px;
+}
+
+.btn-flat.waves-purple:hover {
+  background-color: #DCCAEC;
+}
+
+.btn.purplee {
+  background-color: #300340;
+}
+
+.btn.purplee:hover {
+  background-color: #75009F;
+}
+
+
+.menu {
+  margin-top: 5vh;
+}
+
+.menu .row {
+  margin-bottom: 0;
+}
+
+.menu-option {
+  position: relative;
+  margin: 15px auto 15px auto;
+  background-color: blue;
+  height: 80px;
+  min-width: 500px;
+  width: 45vw;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px 1px #9797972f;
+  transform: translateY(0);
+  transition: transform 0.1s ease-in-out;
+  background-color: #F5F5F5;
+}
+
+.menu-option:hover {
+  transform: translateY(-10px);
+  transition: all 0.1s ease-in;
+}
+
+.menu-option h5 {
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.menu-option i {
+  position: absolute;
+  right: 20px;
+  left: auto;
+  top: 25px;
+}
+
+.waves-effect.waves-purple .waves-ripple {
+  background-color: rgba(117, 0, 159, 0.363);
+}
+
+main {
+  min-width: 100vw;
+  width: 100vw;
+  min-height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 100vw;
+  top: 0;
+  background-color: #E5E9F1;
+  z-index: 2;
+  transition: left 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+main.showed {
+  overflow: visible;
+  box-shadow: 0 4px 20px #979797;
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.b {
+  border-radius: 30px;
+  text-transform: none !important;
+}
+
+header {
+  position: fixed;
+  width: calc(100% - 2px);
+  height: 25px;
+  margin: 1px 1px auto 1px;
+  z-index: 999;
+  -webkit-app-region: drag;
+  overflow: hidden;
+  padding: 0 10px 0 10px;
+  top: 0px;
+}
+
+header a.head {
+  -webkit-app-region: no-drag;
+  width: 40px;
+  height: 25px !important;
+  padding: 0 0 0 12px !important;
+  border-radius: 0px !important;
+  position: relative !important;
+  line-height: 25px !important;
+}
+
+header a.head i {
+  font-size: 15px !important;
+}
+
+#about {
+  position: relative;
+  -webkit-app-region: no-drag;
+  height: 25px !important;
+  line-height: 25px !important;
+  left: -90px;
+}
+
+#close {
+  left: calc(100vw - 50px);
+}
+
+#minimize {
+  left: calc(100vw - 130px);
+}
+
+main h2.title {
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 2.5em;
+}
+
+main h3.title {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+main h4.title {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+h4 {
+  font-weight: 800;
+  margin-top: 0;
+}
+
+section.scroll {
+  margin-top: 25px;
+  height: calc(100vh - 25px);
+  overflow-y: auto;
+}
+
+#content {
+  padding: 20px;
+}
+
+.checkbox span{
+  margin-top: 5px;
+}
+
+span.center {
+  font-weight: 700;
+}

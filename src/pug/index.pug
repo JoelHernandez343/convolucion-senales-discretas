@@ -1,0 +1,123 @@
+doctype html
+html
+  head
+    link(type="text/css" rel="stylesheet" href="./../css/icons.css")
+    link(type="text/css" rel="stylesheet" href="./../css/montserrat-font.css")
+    link(type="text/css" rel="stylesheet" href="./../css/materialize.min.css"  media="screen,projection")
+    link(type="text/css" rel="stylesheet" href="./../css/main.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  body
+    header
+      a#close.btn-flat.waves-effect.waves-light.waves-purple.head
+        i.material-icons close
+      a#minimize.btn-flat.waves-effect.waves-light.waves-purple.head
+        i.material-icons expand_more
+      a#about.btn.btn-flat.waves-effect.waves-purple.b
+        i.left.material-icons mood
+        | Sobre
+
+    section.scroll
+      #content.row
+        .col.s12
+          .row
+            .col.s12
+              h4 Señal 1
+            .col.s12.m4
+              .row
+                .input-field.col.s12
+                  input#s1(type="text")
+                  label(for="s1") Señal 1
+                .input-field.col.s12
+                  input#cs1(type="text")
+                  label(for="cs1") Cero de señal 1
+                .input-field.col.s12.l6
+                  a#gs1.btn.btn-flat.waves-effect.waves-purple.b
+                    i.left.material-icons insert_chart
+                    | Graficar
+                p.checkbox.col.s12.l6
+                  label
+                    input#ps1(type="checkbox")
+                    span Periódica
+            .col.s12.m8
+              canvas#graph1
+
+            .col.s12
+              h4 Señal 2
+            .col.s12.m4
+              .row
+                .input-field.col.s12
+                  input#s2(type="text")
+                  label(for="s2") Señal 1
+                .input-field.col.s12
+                  input#cs2(type="text")
+                  label(for="cs2") Cero de señal 1
+                .input-field.col.s12.l6
+                  a#gs2.btn.btn-flat.waves-effect.waves-purple.b
+                    i.left.material-icons insert_chart
+                    | Graficar
+                p.checkbox.col.s12.l6
+                  label
+                    input#ps2(type="checkbox")
+                    span Periódica
+            .col.s12.m8
+              canvas#graph2
+                
+            .col.s12
+              .row
+                .col.s12.m4
+                  a#convolucionar.btn.waves-effect.purplee.b
+                    | Convolucionar
+
+            .col.s12
+              h4 Señal Resultado
+            .results.col.s12.m4
+              p#s3 --,--
+              p#ps3 --,--
+            .col.s12.m8
+              canvas#graph3
+    
+      .row
+        .col.s12
+          a#button.btn.btn-flat.waves-effect.waves-purple.b
+            i.left.material-icons error
+            | Desarrollador
+    
+    main
+      .row
+        .col.s12
+          a#back.btn.waves-effect.waves-purple.btn-flat.b
+            | Regresar
+            i.left.material-icons chevron_left
+        .container
+          h2.title Convolución
+          h3.title Teoría de comunicaciones y Señales
+          h4.title Profesor: Jacqueline Arzate Gordillo
+          h4.title Grupo: 3CV6
+        .col.s12.menu.center
+          .row
+            .col.s12
+              a.menu-option.waves-effect.waves-purple
+                .row
+                  .col.s12.center
+                    h5 Joel Harim Hernández Javier
+                    i.material-icons chevron_right
+            .col.s12
+              a.menu-option.waves-effect.waves-purple
+                .row
+                  .col.s12.center
+                    h5 Usiel
+                    i.material-icons chevron_right
+            .col.s12
+              a.menu-option.waves-effect.waves-purple
+                .row
+                  .col.s12.center
+                    h5 Raúl Rico
+                    i.material-icons chevron_right
+
+
+    
+
+
+    script(type="text/javascript" src="./../js/materialize.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0")
+    script(type="module" src="./../js/main.js")

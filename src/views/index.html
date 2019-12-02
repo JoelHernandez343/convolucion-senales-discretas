@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="./../css/icons.css">
+    <link type="text/css" rel="stylesheet" href="./../css/montserrat-font.css">
+    <link type="text/css" rel="stylesheet" href="./../css/materialize.min.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="./../css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header><a class="btn-flat waves-effect waves-light waves-purple head" id="close"><i class="material-icons">close</i></a><a class="btn-flat waves-effect waves-light waves-purple head" id="minimize"><i class="material-icons">expand_more</i></a><a class="btn btn-flat waves-effect waves-purple b" id="about"><i class="left material-icons">mood</i>Sobre</a></header>
+    <section class="scroll">
+      <div class="row" id="content">
+        <div class="col s12">
+          <div class="row">
+            <div class="col s12">
+              <h4>Señal 1</h4>
+            </div>
+            <div class="col s12 m4">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="s1" type="text">
+                  <label for="s1">Señal 1</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="cs1" type="text">
+                  <label for="cs1">Cero de señal 1</label>
+                </div>
+                <div class="input-field col s12 l6"><a class="btn btn-flat waves-effect waves-purple b" id="gs1"><i class="left material-icons">insert_chart</i>Graficar</a></div>
+                <p class="checkbox col s12 l6">
+                  <label>
+                    <input id="ps1" type="checkbox"><span>Periódica</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+            <div class="col s12 m8">
+              <canvas id="graph1"></canvas>
+            </div>
+            <div class="col s12">
+              <h4>Señal 2</h4>
+            </div>
+            <div class="col s12 m4">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="s2" type="text">
+                  <label for="s2">Señal 1</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="cs2" type="text">
+                  <label for="cs2">Cero de señal 1</label>
+                </div>
+                <div class="input-field col s12 l6"><a class="btn btn-flat waves-effect waves-purple b" id="gs2"><i class="left material-icons">insert_chart</i>Graficar</a></div>
+                <p class="checkbox col s12 l6">
+                  <label>
+                    <input id="ps2" type="checkbox"><span>Periódica</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+            <div class="col s12 m8">
+              <canvas id="graph2"></canvas>
+            </div>
+            <div class="col s12">
+              <div class="row">
+                <div class="col s12 m4"><a class="btn waves-effect purplee b" id="convolucionar">Convolucionar</a></div>
+              </div>
+            </div>
+            <div class="col s12">
+              <h4>Señal Resultado</h4>
+            </div>
+            <div class="results col s12 m4">
+              <p id="s3">--,--</p>
+              <p id="ps3">--,--</p>
+            </div>
+            <div class="col s12 m8">
+              <canvas id="graph3"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12"><a class="btn btn-flat waves-effect waves-purple b" id="button"><i class="left material-icons">error</i>Desarrollador</a></div>
+      </div>
+    </section>
+    <main>
+      <div class="row">
+        <div class="col s12"><a class="btn waves-effect waves-purple btn-flat b" id="back">Regresar<i class="left material-icons">chevron_left</i></a></div>
+        <div class="container">
+          <h2 class="title">Convolución</h2>
+          <h3 class="title">Teoría de comunicaciones y Señales</h3>
+          <h4 class="title">Profesor: Jacqueline Arzate Gordillo</h4>
+          <h4 class="title">Grupo: 3CV6</h4>
+        </div>
+        <div class="col s12 menu center">
+          <div class="row">
+            <div class="col s12"><a class="menu-option waves-effect waves-purple">
+                <div class="row">
+                  <div class="col s12 center">
+                    <h5>Joel Harim Hernández Javier</h5><i class="material-icons">chevron_right</i>
+                  </div>
+                </div></a></div>
+            <div class="col s12"><a class="menu-option waves-effect waves-purple">
+                <div class="row">
+                  <div class="col s12 center">
+                    <h5>Usiel</h5><i class="material-icons">chevron_right</i>
+                  </div>
+                </div></a></div>
+            <div class="col s12"><a class="menu-option waves-effect waves-purple">
+                <div class="row">
+                  <div class="col s12 center">
+                    <h5>Raúl Rico</h5><i class="material-icons">chevron_right</i>
+                  </div>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="./../js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="module" src="./../js/main.js"></script>
+  </body>
+</html>
