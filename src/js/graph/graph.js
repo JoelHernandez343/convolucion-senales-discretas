@@ -214,6 +214,7 @@ let convolucionar = e => {
 
   let x = signals[1];
   let y = signals[2];
+  var puntos = '';
 
   if (!x.periodica && !y.periodica){
     let ans = cFinita(x.data, y.data, x.center, y.center);
@@ -227,6 +228,9 @@ let convolucionar = e => {
     buildGraph(ans.arreglo, domain, 3);
   }
   else if (x.periodica || y.periodica){
+
+    puntos = '...';
+
     let xp = x;
     
     if (!x.periodica || (y.periodica && y.periodo > x.periodo)){
@@ -248,12 +252,14 @@ let convolucionar = e => {
     buildGraph(arreglo, domain, 3);
   }
 
-  D.getElementById('s3').innerHTML = signals[3].data.map((e, i) => {
+  var final = signals[3].data.map((e, i) => {
     if (i == signals[3].center){
       return '<span class="center">' + Number.parseFloat(e).toFixed(2) + ' </span>';
     }
     return Number.parseFloat(e).toFixed(2) + ' ';
   });
+
+  D.getElementById('s3').innerHTML = puntos + final.toString() + puntos;
 
   var pPer = D.getElementById('ps3');
 
