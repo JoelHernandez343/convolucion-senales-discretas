@@ -1,5 +1,5 @@
 # Señales
-## Práctica 02 | Convulución de señales discretas.
+## Práctica 02 | Convolución de señales discretas.
 ## Indice
 - [Descripción](#Descripción)
 - [Capturas](#Capturas)
