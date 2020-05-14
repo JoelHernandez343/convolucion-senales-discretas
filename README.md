@@ -10,7 +10,8 @@ Programa que, dadas 2 señales discretas (ya sean periódicas, o no), permite ca
 - Recibe 2 señales discretas.
 - Pueden ser periódicas.
 - Admite fracciones y números flotantes.
-Se realizó completamente en [NodeJs](https://nodejs.org/es/) y [Electron](https://www.electronjs.org/) usando JavaScript, CSS, HTML y, para la parte responsiva y el diseño, se utilizó el Framework [MaterializeCSS](https://materializecss.com/).
+
+Se realizó completamente en [Nodejs](https://nodejs.org/es/) y [Electron](https://www.electronjs.org/) usando JavaScript, CSS, HTML y, para la parte responsiva y el diseño, se utilizó el Framework [MaterializeCSS](https://materializecss.com/).
 ## Capturas
 ### Interfaz principal:
 ![Interfaz principal](docs/images/mainUI.png)
@@ -22,8 +23,8 @@ Se realizó completamente en [NodeJs](https://nodejs.org/es/) y [Electron](https
 ![Responsividad](docs/images/responsiveUI.png)
 ## Requisitos
 - Git (recomendado)
-- NodeJS (versión ^13.x.x)
-- npm (Viene con NodeJS)
+- Nodejs (versión ^13.x.x)
+- npm (Viene con Nodejs)
 ## Uso
 1. Clona este repositorio, ya sea descargándolo, o clonandolo con `git`:
 ```bash
@@ -73,4 +74,4 @@ src // Código
 
 `Pug` tiene una sintaxis más simple que HTML, es muy importante la tabulación, revisar este [artículo](https://medium.com/laboratoria-how-to/conoce-todo-sobre-pug-1ba98496191a) o la [documentación oficial](https://pugjs.org/api/getting-started.html).
 
-Al ejecutar `npm start`, aparte del servidor de `Electron` se ejecuta el compilador de `Pug`, solo es necesario guardar el archivo `index.pug` y `Pug` detectará automáticamente los cambios y `Electron` refrescará la aplicación.
+Al ejecutar `npm start`, aparte del servidor de `Electron` se ejecuta el compilador de `Pug`, solo es necesario guardar el archivo `index.pug` y `Pug` detectará automáticamente los cambios y compilará `index.html` y `Electron` refrescará la aplicación.
