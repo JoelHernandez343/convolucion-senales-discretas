@@ -4,6 +4,7 @@
 - [Descripción](#Descripción)
 - [Capturas](#Capturas)
 - [Estrutura del proyecto](#Estrutura-del-proyecto)
+- [Test](#Test)
 - [Edición](#Edición)
 ## Descripción
 Programa que, dadas 2 señales discretas (ya sean periódicas, o no), permite calcular la convolución de dichas señales, además de obtener su gráfica y mostrarla.
@@ -67,6 +68,9 @@ src // Código
 └── views   // Vistas renderizadas por Pug
     └── index.html
 ```
+## Test
+En `test/` se encuentran algunas señales de prueba. 
+
 ## Edición
 > `Electron` cuenta con HotReload, cada cambio que se realice en los archivos refrescará la aplicación.
 
