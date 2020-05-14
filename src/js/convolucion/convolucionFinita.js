@@ -1,3 +1,6 @@
+// Calculate conv(x, y), where x, y are finite discrete signals
+// x, y: Array
+// cx, cy: Int
 let convolucionFinita = (x, y, cx, cy) => {
   let ans = new Array(x.length + y.length - 1);
 
@@ -14,6 +17,7 @@ let convolucionFinita = (x, y, cx, cy) => {
   return { "arreglo": ans, "centro": cx + cy};
 }
 
+// Test Code
 // let x = [1, 2, 3, 2, 1];
 // let y = [1, 2, 3, 2, 1];
 

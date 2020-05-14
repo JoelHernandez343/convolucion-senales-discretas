@@ -1,3 +1,6 @@
+// Calculate conv(x, y), where x, y are periodic discrete signals
+// x, y: Array
+// cx, cy: Int
 let convPeriodica = (x, y, cx, cy) => {
   let ans = Array.from(new Array(x.length)).map(e => 0);
 
@@ -25,21 +28,12 @@ let convPeriodica = (x, y, cx, cy) => {
     }
   }
 
-  // var centro = begin - cy;
-
-  // if (centro < 0){
-  //   var tmp = x.length - 1 - begin;
-  //   tmp -= centro;
-  //   tmp %= x.length;
-  //   centro = x.length - 1 - tmp;
-  // }
-  // centro = cx < centro ? cx + x.length - centro : cx - centro;
-
   return { "arreglo": ans, "centro": centro};
 }
 
 export { convPeriodica as cPeriodica }
 
+// Test Code
 // let x = [1, 2, 0, -1, 1];
 // let y = [-2, -1, 3, 1];
 
